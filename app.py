@@ -21,7 +21,7 @@ print("Bot Settings")
 print("Like Tweets :", LIKE)
 print("Follow users :", FOLLOW)
 
-for tweet in tweepy.Cursor(api.search, q=('#feeskumkaro OR #AKGEC OR #akgec -filter:retweets'), lang='en').items():
+for tweet in tweepy.Cursor(api.search, q=('#feeskamkaro OR #AKGEC OR #akgec OR #AKGECfeeskamkaro -filter:retweets'), lang='en').items():
     try:
         print('\nTweet by: @' + tweet.user.screen_name)
 
