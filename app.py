@@ -37,7 +37,7 @@ for tweet in tweepy.Cursor(api.search, q=('#feeskamkaro OR #AKGEC OR #akgec OR #
                 tweet.user.follow()
                 print('Followed the user')
 
-        sleep(300)
+        sleep(120)
 
     except tweepy.TweepError as e:
         print(e.reason)
