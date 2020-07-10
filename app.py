@@ -21,7 +21,7 @@ print("Bot Settings")
 print("Like Tweets :", LIKE)
 print("Follow users :", FOLLOW)
 
-for tweet in tweepy.Cursor(api.search, q=('#feeskamkaro OR #AKGEC OR #akgec OR #AKGECfeeskamkaro -filter:retweets'), lang='en').items():
+for tweet in tweepy.Cursor(api.search, q=('#feeskamkaro OR #AKGEC OR #akgec OR #AKGECfeeskamkaro OR #SpeakUpForStudents -filter:retweets'), lang='en').items():
     try:
         print('\nTweet by: @' + tweet.user.screen_name)
 
@@ -37,7 +37,7 @@ for tweet in tweepy.Cursor(api.search, q=('#feeskamkaro OR #AKGEC OR #akgec OR #
                 tweet.user.follow()
                 print('Followed the user')
 
-        sleep(120)
+        sleep(61)
 
     except tweepy.TweepError as e:
         print(e.reason)
